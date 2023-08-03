@@ -13,8 +13,8 @@ function initMap(): void {
     document.getElementById('map') as HTMLElement,
     {
       zoom: 19,
-      center: { lat: 18.5314, lng: 73.870999 },
-      mapTypeId: 'satellite',
+      center: { lat: 18.56803741014614, lng: 73.76693946501757 },
+      mapTypeId: 'terrain',
     }
   );
   // new google.maps.Marker({
@@ -25,8 +25,8 @@ function initMap(): void {
   const bounds = new google.maps.LatLngBounds(
     //new google.maps.LatLng(62.281819, -150.287132),
     //new google.maps.LatLng(62.400471, -150.005608)
-    new google.maps.LatLng(18.530864611080084, 73.87039111385027),
-    new google.maps.LatLng(18.531782683389885, 73.8713674379317)
+    new google.maps.LatLng(18.567498753770437, 73.76659083405686),
+    new google.maps.LatLng(18.568391711832057, 73.76779997532141)
 
     // new google.maps.LatLng(18.531701985747137, 73.87053206061877),
     // new google.maps.LatLng(18.53109456918211, 73.87113337868803)
@@ -34,19 +34,19 @@ function initMap(): void {
     // new google.maps.LatLng(50.85180,7.17817)
   );
   new google.maps.Marker({
-    position: { lat: 18.531782683389885, lng: 73.8713674379317 },
+    position: { lat: 18.567498753770437, lng: 73.76659083405686 },
     map,
     title: 'South West',
   });
   new google.maps.Marker({
-    position: { lat: 18.530864611080084, lng: 73.87039111385027 },
+    position: { lat: 18.568391711832057, lng: 73.76779997532141 },
     map,
     title: 'North East',
   });
 
   // The photograph is courtesy of the U.S. Geological Survey.
-  let image = '../images/ASTP_Revised_Floor_Plan.png';
-console.log(image)
+  let image = '../images/1.png';
+  console.log(image);
   /**
    * The custom USGSOverlay object contains the USGS image,
    * the bounds of the image, and a reference to the map.
